@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS Library #1: Fuse.js (search) -->
+  <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+  <!-- JS Library #2: Chart.js (charts) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1"></script>
+</head>
+
+<body data-page="explore">
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="explore.html">Explore</a>
+  </nav>
+
+  <main>
+    <h1>Explore Reviews</h1>
+
+    <div class="row">
+      <button id="loadBtn">Load Reviews</button>
+      <input id="q" placeholder="Search title keyword..." />
+      <select id="minScore">
+        <option value="">Min Score (any)</option>
+        <option value="6">6+</option>
+        <option value="7">7+</option>
+        <option value="8">8+</option>
+        <option value="9">9+</option>
+      </select>
+      <button id="applyBtn">Apply Filter</button>
+    </div>
+
+    <div id="results" class="grid"></div>
+
+    <hr />
+
+    <h2>Favorites (Supabase)</h2>
+    <div class="row">
+      <button id="favRefreshBtn">Refresh Favorites</button>
+    </div>
+    <div id="favList" class="grid"></div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

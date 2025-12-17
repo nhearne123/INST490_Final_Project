@@ -1,0 +1,21 @@
+{
+  "name": "inst490_final_project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/nhearne123/INST490_Final_Project#readme",
+  "bugs": {
+    "url": "https://github.com/nhearne123/INST490_Final_Project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhearne123/INST490_Final_Project.git"
+  },
+  "license": "ISC",
+  "author": "Nicholas",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
